@@ -1,0 +1,105 @@
+{
+  "info": {
+    "name": "HomeWork - Products API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /products",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://localhost:3000/products", "host": ["localhost"], "port": "3000", "path": ["products"] }
+      }
+    },
+    {
+      "name": "GET /products?take=2",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/products?take=2",
+          "host": ["localhost"], "port": "3000", "path": ["products"],
+          "query": [{ "key": "take", "value": "2" }]
+        }
+      }
+    },
+    {
+      "name": "GET /products?take=test",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/products?take=test",
+          "host": ["localhost"], "port": "3000", "path": ["products"],
+          "query": [{ "key": "take", "value": "test" }]
+        }
+      }
+    },
+    {
+      "name": "GET /products?category=electronics",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/products?category=electronics",
+          "host": ["localhost"], "port": "3000", "path": ["products"],
+          "query": [{ "key": "category", "value": "electronics" }]
+        }
+      }
+    },
+    {
+      "name": "GET /products?category=furniture",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/products?category=furniture",
+          "host": ["localhost"], "port": "3000", "path": ["products"],
+          "query": [{ "key": "category", "value": "furniture" }]
+        }
+      }
+    },
+    {
+      "name": "GET /products?category=unknown",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/products?category=unknown",
+          "host": ["localhost"], "port": "3000", "path": ["products"],
+          "query": [{ "key": "category", "value": "unknown" }]
+        }
+      }
+    },
+    {
+      "name": "GET /products?category=electronics&take=2",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/products?category=electronics&take=2",
+          "host": ["localhost"], "port": "3000", "path": ["products"],
+          "query": [
+            { "key": "category", "value": "electronics" },
+            { "key": "take", "value": "2" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /products/1",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://localhost:3000/products/1", "host": ["localhost"], "port": "3000", "path": ["products", "1"] }
+      }
+    },
+    {
+      "name": "GET /products/999",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://localhost:3000/products/999", "host": ["localhost"], "port": "3000", "path": ["products", "999"] }
+      }
+    },
+    {
+      "name": "GET /products/test",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://localhost:3000/products/test", "host": ["localhost"], "port": "3000", "path": ["products", "test"] }
+      }
+    }
+  ]
+}

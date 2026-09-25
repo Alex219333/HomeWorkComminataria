@@ -1,0 +1,16 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "Express: Query и Route параметры - Products API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
